@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Makanan 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: white;
+     }
+
+        /* NAVBAR */
+     .navbar {
+        width: 100%;
+        height: 55px;
+        background-color: #c0392b;
+        display: flex;
+        align-items: center;
+        }
+
+        .nav-left {
+        width: 150px;
+        height: 100%;
+        background-color: #c0392b;
+        }
+
+        .nav-menu {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        }
+
+        .nav-menu li a {
+        display: block;
+        padding: 18px 25px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        }
+
+        .nav-menu li a:hover {
+        background-color: orange;
+        color: white;
+        }
+
+        .active {
+        background-color: orange;
+        color: white;
+        }
+
+        /* JUDUL */
+        .judul {
+        text-align: center;
+        color: brown;
+        margin-top: 15px;
+        }
+
+        /* CONTAINER */
+        .container {
+        background-color: #eaf3fb;
+        margin: 20px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        }
+
+        /* CARD */
+        .card {
+        width: 250px;
+        text-align: center;
+        }
+
+        /* GAMBAR BULAT */
+        .gambar {
+        width: 140px;
+        height: 140px;
+        background-color: white;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+        }
+
+        .gambar img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        }
+
+        /* NAMA MAKANAN */
+        .nama {
+        margin-top: 15px;
+        font-weight: bold;
+        padding: 5px;
+        color: white;
+        }
+
+        .makanan {
+        margin-top: 15px;
+        font-weight: bold;
+        padding: 6px;
+        color: white;
+        }
+
+        /* WARNA BAR */
+        .merah {
+        background-color: salmon;
+        }
+
+        .hijau {
+        background-color: lightgreen;
+        }
+
+        .ungu {
+        background-color: plum;
+        }
+
+        /* DESKRIPSI */
+        .deskripsi {
+        background-color: white;
+        padding: 10px;
+        font-size: 13px;
+        color: gray;
+        border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="nav-left"></div>
+
+        <ul class="nav-menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- JUDUL -->
+    <h2 class="judul">Layout Makanan 1</h2>
+    <hr>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <div class="gambar">
+                <img src="indomie.png" alt="Indomie Goreng">
+            </div>
+
+            <div class="nama makanan merah">Indomie Goreng</div>
+
+            <div class="deskripsi">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nulla earum vel veritatis numquam doloremque id,
+                molestias voluptatum illum recusandae sit!
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <div class="gambar">
+                <img src="bakwan.png" alt="Bakwan Jagung">
+            </div>
+
+            <div class="nama makanan hijau">Bakwan Jagung</div>
+
+            <div class="deskripsi">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fugiat accusamus dolorem perspiciatis consequuntur magni.
+                Qui enim odit in aspernatur doloribus iste.
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <div class="gambar">
+                <img src="miesoto.png" alt="Mie Soto">
+            </div>
+
+            <div class="nama makanan ungu">Mie Soto</div>
+
+            <div class="deskripsi">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis dignissimos maxime vel repellat voluptatibus
+                est officiis nihil ipsum quidem illum.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

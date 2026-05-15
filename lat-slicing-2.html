@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Makanan 2</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d6cdbd;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* CONTAINER CARD */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        /* CARD */
+        .card {
+            width: 220px;
+            text-align: center;
+        }
+
+        /* GAMBAR */
+        .card img {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* BOX MENU */
+        .menu-box {
+            border: 2px solid #f5f5f5;
+            background-color: white;
+        }
+
+        /* HEADER MENU */
+        .menu-title {
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .yellow {
+            background-color: #f4b400;
+        }
+
+        .red {
+            background-color: #ef2b1f;
+        }
+
+        .white {
+            background-color: #ffffff;
+        }
+
+        /* ISI MENU */
+        .menu-content {
+            padding: 15px;
+            font-size: 18px;
+            line-height: 1.5;
+            background-color: #d9cdb8;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="judul">Layout Makanan 2</div>
+
+    <div class="container">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="https://www.indomie.com/uploads/product/indomie-mi-goreng-special_detail_094906814.png" alt="">
+
+            <div class="menu-box">
+                <div class="menu-title yellow">
+                    Menu 1 - Mie Goreng
+                </div>
+
+                <div class="menu-content">
+                    Minim non est irure deserunt eiusmod voluptate
+                    reprehenderit aute amet ipsum id.
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="https://www.indomie.com/uploads/product/indomie-mi-goreng-special_detail_094906814.png" alt="">
+
+            <div class="menu-box">
+                <div class="menu-title red">
+                    Menu 2 - Mie Goreng
+                </div>
+
+                <div class="menu-content">
+                    Minim non est irure deserunt eiusmod voluptate
+                    reprehenderit aute amet ipsum id.
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="https://www.indomie.com/uploads/product/indomie-mi-goreng-special_detail_094906814.png" alt="">
+
+            <div class="menu-box">
+                <div class="menu-title white">
+                    Menu 3 - Mie Goreng
+                </div>
+
+                <div class="menu-content">
+                    Minim non est irure deserunt eiusmod voluptate
+                    reprehenderit aute amet ipsum id.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
